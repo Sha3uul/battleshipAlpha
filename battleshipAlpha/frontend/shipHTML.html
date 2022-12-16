@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Very Simple Battleship Game</title>
+		<link rel="stylesheet" type="text/css" href="shipCss.css">
+	</head>
+	<body>
+	<video autoplay muted loop id="myVideo">
+			<source src="assets/shipFootage.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+	</video>
+	
+	<h1>Battleship</h1>	
+
+	<p>Click the board to fire at a ship. Try to sink every battleship!</p>
+
+	<table border="0" width="100%">
+		<td><tr>
+	<div id="owngameBoard">
+	</div>
+	
+	<script type="text/javascript" src="shipscript.js"></script>
+	</tr></td>
+
+	<td><tr>
+	
+	<div class="middle">
+		<button id='btn' type="submit" onclick=genShip()><b>Start Game</b></button>
+	</div>
+	<div id="botgameBoard"></div>
+	<button id="imgg" type="submit" style="position:relative; left:415px; top:2px;" onclick="imgGen()"><b>Show Reward</b></button>
+	<img src="assets/transparent.png" width="305" height="312" id="myPicture" alt="some image" style="position:relative; left:415px; top:2px;">
+	<script type="text/javascript" src="shipscript.js"></script>
+	</tr></td></table></body>
+</html>
